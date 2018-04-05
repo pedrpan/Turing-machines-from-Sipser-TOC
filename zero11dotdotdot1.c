@@ -14,9 +14,9 @@ main()
   string[i-1]='\0';
   stringsize = i-2;
   if (zero11dotdotdot1(string, i)==1)
-    printf("haibin is a very sexy girl\n");
+    printf("machine accepts\n");
   else
-    printf("haibin is not a very sexy gir\n");
+    printf("machine rejects\n");
 }
 
 int zero11dotdotdot1(char s[], int i){
