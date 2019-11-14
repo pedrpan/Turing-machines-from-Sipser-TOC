@@ -16,6 +16,7 @@ int main(){
     printf("machine accepts\n");
   else
     printf("machine rejects\n");
+  
   return 0;
 }
 
