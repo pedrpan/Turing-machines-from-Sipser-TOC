@@ -3,8 +3,7 @@
 
 int turingpoweroftwo(char s[]);
 
-int main()
-{
+int main(){
   int stringsize, i=1;
   char *string = malloc(1);
 
@@ -16,6 +15,7 @@ int main()
     printf("The machine accepts");
   else
     printf("The machine rejects");
+  
   return 0;
 }
 
