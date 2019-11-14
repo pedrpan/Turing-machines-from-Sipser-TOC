@@ -3,26 +3,27 @@
 
 int turingpoweroftwo(char s[]);
 
-main()
+int main()
 {
-  int stringsize, keylen, i=1;
+  int stringsize, i=1;
   char *string = malloc(1);
 
   while((string[i-1] = getchar()) != EOF)
     string = realloc(string, ++i);
   string[i-1]='\0';
-  stringsize = i-2;
+  
   if (turingpoweroftwo(string)==1)
     printf("The machine accepts");
   else
     printf("The machine rejects");
+  return 0;
 }
 
 int turingpoweroftwo(char s[]){
   int j = 0;
   int q = 1;
   printf("M is in state %d\n and our string is equal to \n", q);
-  printf(s);
+  printf("%s", s);
   printf("\n");
   s[j++] = 'u';
   if (s[j] == '\0')
@@ -30,7 +31,7 @@ int turingpoweroftwo(char s[]){
   q = 2;
   while(1){
     printf("M is in state %d\n and our string is equal to \n", q);
-    printf(s);
+    printf("%s", s);
     printf("\n");
     if (q == 2){
       if (s[j] == '0')
